@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <py-script>
+        import random
+
+
+        fname = "Ali","Veli","Tunahan","Osman","Fatih","Mustafa","Kazım","Tarık","Fatma","Gamze","Beril","Lale","Nilay","Temel","Suheyla","Elif","Mehmet","Zeynep","Derya","Cansu","Hale","Hasan","Mahmut","Uzeyir"
+
+        lname = "Terzi","Cansever","Cam","Er","Demir","Akca","Garip","Sen","Bolat","Karakaya","Kaya","Yilmaz","Sungur","Turkoglu","Catak","Zorlu","Karakas","Islam","Polat","Akar","Akkus","Cavus","Hatap","Celik"
+
+        firstName = random.choice(fname)
+        lastName = random.choice(lname)
+        fullName = firstName + " " + lastName
+        username = (firstName + lastName + str(random.randint(1, 1000))).lower().strip()
+        password = (firstName[0:3] + lastName + str(random.randint(1, 100))).lower().strip()
+        print('\n', username, password)  
+    </py-script>
+  </body>
+</html>
